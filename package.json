@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --inline --progress",
     "build": "rimraf demo && rimraf dist && webpack --config config/webpack.config.pro.js --progress --profile --colors --bail ",
-    "publish-patch": "npm run lint && npm run beautify-lint && mocha && npm version patch && git push && git push --tags && npm publish",
+    "publish-patch": "npm version patch && git push && git push --tags && npm publish",
     "publish-blog": ""
   },
   "repository": {
